@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.2">
+    <title xml:lang="ko">이온디 마이노트</title>
+	<title xml:lang="en">Eond MyNote</title>
+    <description xml:lang="ko">
+	# 사이트 : http://eond.com
+	# 메뉴얼 : http://code.google.com/p/eond/wiki/eond_mynote_setup
+	# 피드백 : http://code.google.com/p/eond/issues/list
+	# 연동자료 :
+	1. 이온디 마이노트 카운터 위젯 스킨 ver.0.
+	2. 이온디 마이노트 로그인 위젯 스킨 ver.0.9
+	3. 이온디 마이노트 컨텐트 위젯 스킨 ver.0.1
+	※ 위 자료들이 있어야 제대로 구현됩니다.
+    </description>
+	<description xml:lang="en">
+	# Website : http://eond.com
+	# Interlocking Skin(*requirement) :
+	　* Eond Mynote Counter Status Widget Skin ver.0.3
+	　* Eond Mynote Login Info Widget Skin ver.0.9
+	　* Eond Mynote Content Widget Skin ver.0.3
+	※ This Layout skin is must be properly implemented the following data.
+	# Manual : http://code.google.com/p/eond/wiki/eond_mynote_setup
+	# Feedback : http://code.google.com/p/eond/issues/list
+    </description>
+    <version>1.4.5</version>
+    <date>2013-02-20</date>
+	<link>http://eond.com/</link>
+    <author email_address="eond@eond.com" link="http://eond.com">
+        <name>이온디</name>
+    </author>
+    <menus>
+		<menu name="site_menu" maxdepth="1" default="true">
+            <title xml:lang="ko">사이트 네비게이션(선택하지 않을 경우 메뉴 대신 저작권 문구가 출력됩니다.)</title><title xml:lang="en">Site Navigation Bar</title>
+			<description>레이아웃 하단의 사이트 네비게이션입니다.</description>
+        </menu>
+		<menu name="main_menu" maxdepth="3" default="true">
+            <title xml:lang="ko">기본 메뉴(필수)</title><title xml:lang="en">Globar Navigation Bar</title>
+        </menu>
+		<menu name="wnb">
+			<title xml:lang="ko">컨텐츠 메뉴</title><title xml:lang="en">Content Navigation Bar</title>
+			<maxdepth>1</maxdepth>
+		</menu>
+		<menu name="family_site">
+			<title xml:lang="ko">패밀리 사이트(선택하지 않을 경우 표시되지 않습니다.)</title><title xml:lang="en">Family Site Navigation Bar</title>
+			<maxdepth>1</maxdepth>
+		</menu>
+	</menus>
+	
+    <extra_vars>
+	<group>
+	<title xml:lang="ko">사이트 정보 및 프로필</title><title xml:lang="en">Site Profile</title>
+		<var name="logo_image" type="image">
+            <title xml:lang="ko">로고이미지</title><title xml:lang="en">Logo Image</title>
+            <description>로고이미지를 입력하세요. width 23px인 투명이미지가 가장 잘 어울립니다.(기본 사이즈 20*82)</description>
+        </var>
+        <var name="index_url" type="text">
+            <title xml:lang="ko">홈페이지 URL(*)</title><title xml:lang="en">Website URL(*)</title>
+            <description>로고를 클릭시에 이동할 홈 페이지 URL을 입력해 주세요.</description>
+		</var>
+		<var name="profile_image" type="image">
+			<title xml:lang="ko">프로필 이미지</title><title xml:lang="en">Profile Image</title>
+		</var>
+		<var name="profile_bg" type="text">
+			<title xml:lang="ko">프로필 배경색상</title><title xml:lang="en">Profile Background Color</title>
+			<description>프로필 배경색상을 #000000 또는 black 형식으로 입력해주세요. 기본 색상은 black 입니다.</description>
+		</var>
+		<var name="profile_color" type="text">
+			<title xml:lang="ko">프로필 글자 색상</title><title xml:lang="en">Profile Font Color</title>
+			<description>프로필 글자색상을 #000000 또는 black 형식으로 입력해주세요. 기본 색상은 #767676 입니다.</description>
+		</var>
+		$layout_info->profile_color
+		<var name="profile" type="textarea">
+			<title xml:lang="ko">프로필 코멘트</title><title xml:lang="en">Profile Comment</title>
+			<description>HTML 코드를 직접 입력할 수 있습니다.</description>
+		</var>
+	</group>
+	<group>
+	<title xml:lang="ko">레이아웃 디자인</title><title xml:lang="en">Layout Design</title>
+		<var name="gnb_padding" type="select"><title xml:lang="ko">상단 메뉴 줄간격</title><title xml:lang="en">Globar Navigation Bar Padding</title>
+			<options value="narrow"><title xml:lang="ko">좁게　</title><title xml:lang="en">narrow　</title></options>
+			<options value="normal"><title xml:lang="ko">보통　</title><title xml:lang="en">normal　</title></options>
+			<options value="wide"><title xml:lang="ko">넓게　</title><title xml:lang="en">wide　</title></options>
+		</var>
+		<var name="layout_position" type="radio">
+            <title xml:lang="ko">레이아웃 위치</title><title xml:lang="en">Layout position</title>
+			<options value="left"><title xml:lang="ko">왼쪽 정렬　</title><title xml:lang="en">Left justified　</title></options>
+			<options value="center"><title xml:lang="ko">가운데 정렬　</title><title xml:lang="en">Center justified　</title></options>
+        </var>
+		<var name="colorset" type="radio" default="default">
+            <title xml:lang="ko">컬러셋</title><title xml:lang="en">Colorset</title>
+            <description>각 컬러셋마다 레이아웃 정렬 기능 및 배경색상 기능을 지원합니다. 기본적으로 배경색상만을 지정하고 싶을 경우 기본 컬러셋을 지정한 후 레이아웃 정렬을 해주세요.</description>
+            <options value="default" src="./images/screenshot/scr_layout_eond_mynote_default.png"><title xml:lang="ko">마이노트(기본)　</title><title xml:lang="en">MyNote(Default)　</title></options>
+			<options value="green" src="./images/screenshot/scr_layout_eond_mynote_green.png"><title xml:lang="ko">그린　</title><title xml:lang="en">Green　</title></options>
+			<options value="greenview" src="./images/screenshot/scr_layout_eond_mynote_greenview.png"><title xml:lang="ko">그린뷰　</title><title xml:lang="en">GreenView　</title></options>
+			<options value="blue" src="./images/screenshot/scr_layout_eond_mynote_blue.png"><title xml:lang="ko">블루　</title><title xml:lang="en">Blue　</title></options>
+			<options value="gray" src="./images/screenshot/scr_layout_eond_mynote_gray.png"><title xml:lang="ko">그레이　</title><title xml:lang="en">Gray　</title></options>
+			<options value="navy" src="./images/screenshot/scr_layout_eond_mynote_navy.png"><title xml:lang="ko">네이비　</title><title xml:lang="en">Navy　</title></options>
+			<options value="black" src="./images/screenshot/scr_layout_eond_mynote_black.png"><title xml:lang="ko">블랙　</title><title xml:lang="en">Black　</title></options>
+			<options value="monochrome" src="./images/screenshot/scr_layout_eond_mynote_monochrome.png"><title xml:lang="ko">모노크롬　</title><title xml:lang="en">Monochrome　</title></options>
+			<options value="calmative" src="./images/screenshot/scr_layout_eond_mynote_calmative.png"><title xml:lang="ko">카머티브　</title><title xml:lang="en">Calmative　</title></options>
+			<options value="neutral" src="./images/screenshot/scr_layout_eond_mynote_neutral.png"><title xml:lang="ko">뉴트럴　</title><title xml:lang="en">Neutral　</title></options>
+			<options value="columnist" src="./images/screenshot/scr_layout_eond_mynote_columnist.png"><title xml:lang="ko">컬럼니스트　</title><title xml:lang="en">columnist　</title></options>
+			<options value="textile" src="./images/screenshot/scr_layout_eond_mynote_textile.png"><title xml:lang="ko">텍스타일　</title><title xml:lang="en">textile　</title></options>
+			<options value="kraft" src="./images/screenshot/scr_layout_eond_mynote_kraft.png"><title xml:lang="ko">크래프트　</title><title xml:lang="en">kraft 　</title></options>
+			<!--
+			<options value="" src="./images/screenshot/scr_layout_eond_mynote_.png"><title xml:lang="ko">　</title><title xml:lang="en">　</title></options>
+			-->
+
+        </var>
+		<var name="background_bgcolor" type="text">
+			<title xml:lang="ko">전체 배경색상</title><title xml:lang="en">Background Color : Layout</title>
+			<description>배경이미지가 아닌 배경색상으로 설정할 수 있습니다. 배경색상값을 입력할 경우 배경이미지가 나타나지 않습니다. 배경이미지를 다시 나타내고 싶을 경우에는 입력값을 지워주세요. 입력예) #2C6F9C (블루톤, 뉴트럴과 어울림) , #929C00(그린톤, 뉴트럴에 어울림), #C6CED1 (그레이톤, 뉴트럴에 어울림) #111111(모노톤, 모노크롬에 어울림)</description>
+		</var>
+        <var name="bgcolor_main" type="text"><title xml:lang="ko">컨텐츠 배경색상</title><title xml:lang="en">Background Color : Content</title>
+		<description>본문이 나타나는 컨텐츠 영역의 배경 색상을 입력하세요. 컨텐츠 영역의 배경색상을 지정할 수 있습니다. 입력할 경우 기존의 배경이미지가 사라집니다. 예) #000000, #FFFFFF, gray 등</description></var>
+		<var name="bgcolor_gnb" type="text"><title xml:lang="ko">상단메뉴 배경색상</title><title xml:lang="en">Background Color : Menu(Globar Navigation Bar)</title><description>상단 메뉴의 배경 색상을 입력하세요.</description></var>
+		<var name="bgcolor_sitebar" type="text"><title xml:lang="ko">사이트바 배경색상</title><title xml:lang="en">Background Color : Menu(Site Navigation Bar)</title><description>사이트바의 배경 색상을 입력하세요.</description></var>
+		<var name="gnb_position" type="radio">
+            <title xml:lang="ko">메뉴 정렬</title><title xml:lang="en">Menu Position</title>
+			<options value="left"><title xml:lang="ko">왼쪽 정렬　</title><title xml:lang="en">Left justified　</title></options>
+			<options value="center"><title xml:lang="ko">가운데 정렬　</title><title xml:lang="en">Center justified　</title></options>
+			<options value="right"><title xml:lang="ko">오른쪽 정렬　</title><title xml:lang="en">Right justified　</title></options>
+        </var>
+		<var name="lnb_size" type="text">
+            <title xml:lang="ko">사이드메뉴 폰트크기</title><title xml:lang="en">Side Menu Font Size</title>
+            <description>pt로 표현됩니다. 숫자로만 입력해주세요. 기본은 8 입니다. 비워두시면 기본 폰트 사이즈로 출력됩니다. </description>
+        </var>
+		<var name="con_width" type="text">
+            <title xml:lang="ko">가운데 컨텐츠 영역 너비</title><title xml:lang="en">Content Width</title>
+            <description>컬러셋에 따라 여백값이 달라 컨텐츠 영역의 크기가 변동되어야할 때 사용하세요. (기본값 : 920) 보통 880, 900 이렇게 20씩 커지게 사용하시면 됩니다.</description>
+        </var>
+		<var name="side_width" type="text">
+            <title xml:lang="ko">왼쪽 사이드 영역 너비</title><title xml:lang="en">Sidebar Width</title>
+            <description>기본 로그인 위젯이 아닐 경우 해당 로그인 위젯의 넓이에 맞게 입력값을 넣어주세요. (기본값 : 150)</description>
+        </var>
+		<var name="aside_width" type="text">
+            <title xml:lang="ko">오른쪽 위젯 영역 너비</title><title xml:lang="en">Widgetbar Width</title>
+            <description>오른쪽 위젯 영역의 너비 설정입니다. (기본값 : 160)</description>
+        </var>
+	</group>
+
+
+	<group>
+	<title xml:lang="ko">배경 설정</title><title xml:lang="en">Background Setting</title>
+		<var name="background_image" type="image">
+            <title xml:lang="ko">전체 배경이미지</title><title xml:lang="en">Background Image : Body</title>
+            <description>배경 이미지를 사용하시려면 등록해주세요.</description>
+        </var>
+		<var name="background_repeat" type="radio">
+            <title xml:lang="ko">배경이미지 타입</title><title xml:lang="en">Background Repeat</title>
+            <description>스크롤을 내렸을 때 배경이미지를 반복해서 보여줄 것인지 고정시켜 보여줄 것인지 선택할 수 있습니다.</description>
+			<options value="repeat"><title xml:lang="ko">스크롤 반복　</title><title xml:lang="en">Repeat</title></options>
+			<options value="fixed"><title xml:lang="ko">스크롤 고정　</title><title xml:lang="en">Fixed</title></options>
+        </var>
+        <var name="background_image2" type="image">
+            <title xml:lang="ko">우측하단 고정 배경이미지</title><title xml:lang="en">Background Image : Bookmark</title>
+            <description>우측 하단에 고정된 이미지입니다.</description>
+        </var>
+	</group>
+	<group>
+	<title xml:lang="ko">위젯 설정</title><title xml:lang="en">Widgets Setting</title>
+		<var name="wdg_view" type="checkbox"><title xml:lang="ko">출력 여부 설정</title><title xml:lang="en">Widgets View</title>
+		<options value="notice"><title xml:lang="ko">공지사항</title><title xml:lang="en">Notice</title></options>
+		<options value="recent"><title xml:lang="ko">최근글</title><title xml:lang="en">Recently Articles</title></options>
+		<options value="cmt"><title xml:lang="ko">최근댓글</title><title xml:lang="en">Comment</title></options>
+		<options value="loca"><title xml:lang="ko">현재위치표시기</title><title xml:lang="en">Location</title></options>
+		<options value="cal"><title xml:lang="ko">달력</title><title xml:lang="en">Calendar</title></options>
+		<options value="tag"><title xml:lang="ko">태그</title><title xml:lang="en">Tag</title></options>
+		<options value="clock"><title xml:lang="ko">시계</title><title xml:lang="en">Clock</title></options>
+		</var>
+
+		<var name="view_notice" type="radio"><title xml:lang="ko">공지사항 위젯 출력</title><title xml:lang="en">Display : Notice Widget</title>
+		<options value="on"><title xml:lang="ko">ON　</title><title xml:lang="en">ON　</title></options><options value="off"><title xml:lang="ko">OFF　</title><title xml:lang="en">OFF　</title></options></var>
+
+
+		<var name="wdg_title" type="text"><title xml:lang="ko">최근 글 및 댓글 제목 길이</title><title xml:lang="en">Recently Articles Title Length</title><description>최근 댓글과 최근 글의 제목 길이를 설정해주세요. (기본값:20)</description></var>
+		
+		<var name="wdg_page" type="select">
+			<title xml:lang="ko">최근글 보기 페이지</title><title xml:lang="en">Recently Articles Page Count</title>
+			<description>최근 글에서 보여지는 페이지 수를 선택해주세요. (기본값:1)</description>
+			<options value="1"><title xml:lang="ko">1</title><title xml:lang="en">1</title></options>
+			<options value="2"><title xml:lang="ko">2</title><title xml:lang="en">2</title></options>
+			<options value="3"><title xml:lang="ko">3</title><title xml:lang="en">3</title></options>
+		</var>
+		<var name="wdg_option" type="checkbox" default="title">
+			<title xml:lang="ko">보기 옵션 추가</title><title xml:lang="en">Recently Articles View Option</title>
+			<description>최근 글에서 보여지는 옵션을 선택해주세요. (기본값:제목)</description>
+			<options value="nickname"><title xml:lang="ko">닉네임</title><title xml:lang="en">Nickname</title></options>
+			<options value="regdate"><title xml:lang="ko">글쓴일</title><title xml:lang="en">Regdate</title></options>
+			<options value="title" checked="checked"><title xml:lang="ko">제목</title><title xml:lang="en">Title</title></options>
+			<options value="regdate"><title xml:lang="ko">댓글수</title><title xml:lang="en">Comment Count</title></options>
+		</var>
+		<var name="wdg_notice" type="text">
+			<title xml:lang="ko">공지사항 위젯</title><title xml:lang="en">Widget : Notice</title>
+			<description>공지사항으로 나타나는 게시판의 모듈번호을 입력하세요. 관리자 메뉴의 위젯 설정 항목에서 아무 위젯을 선택하고 그 위젯을 사용할 모듈을 선택하는 란에서 원하는 모듈을 선택하고 코드 생성을 누르면 모듈의 번호들이 코드에 나옵니다. </description>
+		</var>
+		<var name="wdg_notice_link" type="text">
+			<title xml:lang="ko">공지사항 위젯 연결url</title><title xml:lang="en">Notice Widget URL</title>
+			<description>notice 등 직접 모듈명을 입력하셔도 됩니다. </description>
+		</var>
+		<var name="wdg_notice_title" type="text">
+			<title xml:lang="ko">공지사항 위젯 타이틀</title><title xml:lang="en">Notice Widget Title</title>
+			<description>공지사항 위젯의 타이틀을 입력할 수 있습니다. 빈 칸으로 비워둘 경우 기본 "NOTICE"가 출력됩니다. </description>
+		</var>
+		<var name="view_lang" type="radio" default="on"><title xml:lang="ko">언어 선택 위젯 출력</title><title xml:lang="en">Display : Language Select</title>
+		<options value="on"><title xml:lang="ko">ON　</title><title xml:lang="en">ON　</title></options><options value="off"><title xml:lang="ko">OFF　</title><title xml:lang="en">OFF　</title></options></var>
+		<var name="view_lst" type="radio"><title xml:lang="ko">최근글 위젯 출력</title><title xml:lang="en">Display : Recently Articles</title>
+		<options value="on"><title xml:lang="ko">ON　</title><title xml:lang="en">ON　</title></options><options value="off"><title xml:lang="ko">OFF　</title><title xml:lang="en">OFF　</title></options></var>
+		<var name="view_cmt" type="radio"><title xml:lang="ko">최근 댓글 위젯 출력</title><title xml:lang="en">Display : Comments</title>
+		<options value="on"><title xml:lang="ko">ON　</title><title xml:lang="en">ON　</title></options><options value="off"><title xml:lang="ko">OFF　</title><title xml:lang="en">OFF　</title></options></var>
+		<var name="location_view" type="radio">
+        <title xml:lang="ko">현재위치보기 위젯</title><title xml:lang="en">Display : Location Bar</title>
+		<options value="default"><title xml:lang="ko">ON　</title><title xml:lang="en">ON　</title></options><options value="hidden"><title xml:lang="ko">OFF　</title><title xml:lang="en">OFF　</title></options>
+        </var>
+		<var name="cal" type="radio">
+		<title xml:lang="ko">달력 위젯</title><title xml:lang="en">Calendar Widget</title>
+		<options value="on"><title xml:lang="ko">ON　</title><title xml:lang="en">ON　</title></options>
+		<options value="off"><title xml:lang="ko">OFF　</title><title xml:lang="en">OFF　</title></options>
+		</var>
+		<var name="cal_module" type="text">
+		<title xml:lang="ko">달력 위젯 선택 모듈 번호</title><title xml:lang="en">Calendar Widget Module Number</title>
+		<description>달력 위젯으로 나타나는 1개의 게시판의 모듈 번호를 입력하세요.</description>
+		</var>
+		<var name="tag" type="radio">
+		<title xml:lang="ko">태그 위젯</title><title xml:lang="en">Tag Widget</title>
+		<options value="on" checked="checked"><title xml:lang="ko">ON　</title><title xml:lang="en">ON　</title></options><options value="off"><title xml:lang="ko">OFF　</title><title xml:lang="en">OFF　</title></options>
+		</var>
+		<var name="tag_module" type="text">
+		<title xml:lang="ko">태그 위젯 선택 모듈 번호</title><title xml:lang="en">Tag Widget Module Number</title>
+		<description>태그 위젯으로 나타나는 게시판의 모듈 번호를 입력하세요.</description>
+		</var>
+		<var name="clock" type="radio">
+		<title xml:lang="ko">시계 위젯</title><title xml:lang="en">Clock Widget</title>
+		<options value="on" checked="checked"><title xml:lang="ko">ON　</title><title xml:lang="en">ON　</title></options><options value="off"><title xml:lang="ko">OFF　</title><title xml:lang="en">OFF　</title></options>
+		</var>
+		<var name="slide" type="radio">
+		<title xml:lang="ko">위젯 슬라이드</title><title xml:lang="en">Widgetbar Slide</title>
+		<options value="true"><title xml:lang="ko">이동　</title><title xml:lang="en">Slide</title></options>
+		<options value="false"><title xml:lang="ko">이동 안함　</title><title xml:lang="en">Fixed</title></options>
+		</var>
+		<var name="wdg_contentT" type="textarea"><title xml:lang="ko">컨텐츠 상단 위젯</title><title xml:lang="en">Top Content Widget Code</title>
+		<description>컨텐츠 영역의 상단에 위치하는 커스텀 위젯입니다.</description></var>
+		<var name="wdg_contentB" type="textarea"><title xml:lang="ko">컨텐츠 하단 위젯</title><title xml:lang="en">Bottom Content Widget Code</title>
+		<description>컨텐츠 영역의 하단에 위치하는 커스텀 위젯입니다.</description></var>
+        <var name="wdg1h" type="text">
+            <title xml:lang="ko">상단 위젯 제목</title><title xml:lang="en">Top Widget Title</title>
+        </var>
+		<var name="wdg1url" type="text">
+            <title xml:lang="ko">상단 위젯 url</title><title xml:lang="en">Top widget URL</title>
+        </var>
+		<var name="wdg1" type="textarea">
+			<title xml:lang="ko">상단 위젯 내용 태그</title><title xml:lang="en">Top Widget HTML</title>
+			<description>위젯 영역의 상단에 위치하는 커스텀 위젯입니다.</description>
+		</var>
+		<var name="wdg2h" type="text">
+			<title xml:lang="ko">내부 위젯 제목</title><title xml:lang="en">Content Widget Title</title>
+		</var>
+		<var name="wdg2url" type="text">
+            <title xml:lang="ko">내부 위젯 url</title><title xml:lang="en">Content Widget URL</title>
+        </var>
+		<var name="wdg2" type="textarea">
+			<title xml:lang="ko">내부 위젯 내용 태그</title><title xml:lang="en">Content Widget HTML</title>
+			<description>위젯 영역의 내부에 위치하는 커스텀 위젯입니다. 제목과 내용을 여러개 삽입할 수도 있습니다. 예) [div class='wdg_title']타이틀[/div][div]내용[/div] ※HTML을 입력할 경우 꺽쇠괄호로 사용하세요.</description>
+		</var>
+		<var name="wdg3h" type="text">
+			<title xml:lang="ko">하단 위젯 제목</title><title xml:lang="en">Bottom Widget Title</title>
+		</var>
+		<var name="wdg3url" type="text">
+            <title xml:lang="ko">하단 위젯 url</title><title xml:lang="en">Bottom Widget URL</title>
+        </var>
+		<var name="wdg3" type="textarea">
+			<title xml:lang="ko">하단 위젯 내용 태그</title><title xml:lang="en">Bottom Widget HTML</title>
+			<description>위젯 영역의 하단에 위치하는 커스텀 위젯입니다.</description>
+		</var>
+	</group>
+	</extra_vars>
+
+</layout>

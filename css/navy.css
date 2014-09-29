@@ -1,0 +1,135 @@
+/* 컨텐츠 테두리 : 기존 네이비 컬러 ( 34373E ) */
+b.rtopC, b.rbottomC{display:block;clear:both;width:100%;}
+b.rtopC b, b.rbottomC b{display:block;height: 1px;
+    overflow: hidden; background: #202020 ;}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtopC b.r4, b.rbottomC b.r4{display:block;margin: 0 1px;height: 2px}
+
+#main {background:#202020;margin:0;padding:0px;float:left;width:100%;}
+/*
+2B2B2B 가장 연한
+202020 가장 적당
+111 filter:alpha(opacity=85); opacity:0.85; -moz-opacity:0.85;
+*/
+
+html {height:100%;margin:0;padding:0;background:url("../images/bg/bg_wrap_navy.jpg");}
+#bg {position:absolute;right:0;bottom:30px;background:url(../images/bg/bg_wrap_navy.jpg) no-repeat right bottom fixed;width:250px;height:400px;}
+
+
+/* 사이드와 컨텐츠 구분바*/
+#sidebar {width:167px;border-right:1px solid #222427;overflow:hidden;padding:0 5px;}
+#content {width:100%;padding:5px 14px 5px 10px;border-left:1px solid #4A4A52;overflow:hidden;background:url('../images/navy/bg_colgroup.png') repeat-y right top;}
+#content {}
+/* 메뉴 영역  */
+#gnb,b.rtopG b, b.rbottomG b{background: #2A2D32;}
+/* 레이아웃 컬러 */
+#colgroup,#widget,b.rtop b, b.rbottom b{background:#222222 url('../images/bg/bg_wrap_navy.jpg');}
+#column {width:49px;background:#222222 url(../images/bg_titlebar.png) repeat-y;}
+/* 현재위치출력 */
+#location {background:transparent; border-bottom:1px dotted #34373E;}
+
+/* 프로필 */
+#profile,b.rtopB b, b.rbottomB b{background:#0E0E0F;}
+
+/* 로그인 영역 */
+#snb #logged #login_header {
+float: left;
+width: 100%;
+border:0;
+padding-bottom: 2px;
+margin-bottom: 2px;
+}
+#snb #logged #logged_menu {
+clear: both;
+width:100%;
+border: 1px solid #1E1E1E;
+background-color: #1E1E1E;
+background: url("../images/bg/bg_wrap_black_dark.gif");
+font: 11px dotum;
+color: #767676;
+padding: 5px 5px 0 5px;
+letter-spacing: 0px;
+margin: 3px 0 3px 0;
+padding: 3px 0 0px 5px;
+overflow: hidden;
+}
+#snb #logged #logged_menu .menu_separator {color:#4E4E4E;}
+#snb #logged #music {display:none;}
+#snb #logged #logout .bgp {
+background-position: -60px -43px;
+width: 55px;
+height: 16px;
+}
+#snb #logged #info .bgp {
+background-position: -149px -48px;
+width: 54px;
+height: 10px;
+margin: 1px 3px 0 0;
+}
+
+#snb #login_eond_mynote #id .bgp {
+float: left;
+background-position: 0 -30px;
+width: 12px;
+height: 10px;
+margin-left: 40px;
+margin-top: 3px;
+margin-right: 2px;
+}
+#snb #login_eond_mynote #pw .bgp {
+float: left;
+background-position: -12px -30px;
+width: 52px;
+height: 10px;
+margin-top: 3px;
+margin-right: 2px;
+}
+#snb #login_eond_mynote #btn_join .bgp {
+background-position: 0px -43px;
+width: 57px;
+height: 16px;
+display: inline-block;
+}
+#snb #login_eond_mynote #btn_forgotpw .bgp {
+float: left;
+width: 98px;
+height: 13px;
+background-position: -111px -30px;
+margin-top:-1px;
+}
+
+#snb #login_eond_mynote .separator {
+float: left;
+height: 7px;
+border-right: 1px solid #006B8F;
+margin: 2px 0px 2px 0px;
+overflow: hidden;
+}
+
+#snb  #login_eond_mynote #btn_login {
+width: 57px;
+height: 16px;
+border-top:1px solid #151515;
+border-left:1px solid #151515;
+border-right:1px solid #1F1F1F;
+border-bottom:1px solid #1F1F1F;
+color:#B2B2B2;
+font:italic 10px TAHOMA;
+background:#070707;
+}
+
+#snb #login_eond_mynote #form_field input {width:85px;height:17px;background-color:#111111;border:0px;border-right:1px solid
+#454545;border-bottom:1px solid #454545;font:10px tahoma;color:#575757;margin: 0 0 2px 0 ;padding:0px;padding-left:3px;padding-top:1px;ime-mode:inactive}
+
+
+#sidebar .widgetA .title {border-bottom:1px dashed #333333;}
+
+.widget_title,.wdg h3 {
+	border-top:1px solid #1E1E1E;border-left:1px solid #1E1E1E; border-right:1px solid #1E1E1E; border-bottom:1px solid #1E1E1E;
+	height:13px;font:bold 10px tahoma;color:#777777;display:block;text-align:center;margin:0px auto 5px;background:#0E0E0F;
+	text-transform: uppercase;filter:alpha(opacity=50); opacity:0.50; -moz-opacity:0.50;}
+
+/* 최근댓글코멘트*/
+#sidebar span.replyNum {color:#BD8E00;float:right;font-family: tahoma;font-size:10px;}

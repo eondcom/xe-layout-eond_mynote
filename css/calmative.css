@@ -1,0 +1,28 @@
+
+
+html,#bg {background:url("../images/bg/bg_wrap_calmative.gif");}
+
+
+#siteNav {background-color:#79B0C0;color:#FFFFFF;border-top:1px solid #A1C4CE;}
+#siteNav a {color:#FFFFFF;}
+#siteNav li a:hover{color:#4190A7;text-decoration:underline;}
+
+/* 프로필 */
+#profile,b.rtopB b, b.rbottomB b{background:#F2F2F2;}
+
+
+
+#column {width:2px;background:#79B0C0;}
+#column,#top h1 {display:none;}
+
+
+
+/* 메인메뉴 2차 관련 */
+#gnb li ul {position:absolute;left:-10px;display:none;background:white;border:1px solid #E0E0E0;z-index:100;margin:-1px;padding:0;width:90px;white-space: nowrap; overflow: hidden; text-overflow:ellipsis;} /* 메인메뉴 2차 ul */
+#gnb li li {display:block;text-align:left;padding:5px;} /* 메인메뉴 2차 li */
+#gnb li:hover ul {display:block;} /* 메인메뉴 2차 ul의 마우스 올렸을 때의 나타나는 상태 ~디스플레이만 빼고는 ~메인메뉴 2차 ul~에 가있어도 됨. */
+/* 메인메뉴 2차의 항목들 관련 */
+#gnb li li:hover {background:#CDEAF2;} /* 메인메뉴 2차 li ~항목~에 마우스 올렸을 때 배경색 */
+#gnb li li:hover a {color:#4190A7;} /* 메인메뉴 2차 메뉴에 마우스 올렸을 때 글자 색 */
+
+#gnb a:hover {color:#4190A7;}

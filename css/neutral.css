@@ -1,0 +1,25 @@
+html {background-color:#E3E3E3;background-image:url('');}
+#column {display:none;}
+/* 프로필 영역  */
+#profile,b.rtopB b, b.rbottomB b{background:#C6CED1;}
+
+/* 메뉴 영역  */
+#gnb,b.rtopG b, b.rbottomG b{background: #F0F0F0;}
+#gnb a {color:#919497;}
+#gnb a:hover {color:#555555;}
+#gnb li.on a {color:#767676;}
+#gnb li.on li a {color:#777;}
+
+
+
+/* 메인메뉴 2차 관련 */
+#gnb li ul {position:absolute;left:-10px;display:none;background:#FFFFFF;border:1px solid #C6CED1;z-index:100;margin:-1px;padding:0;width:90px;white-space: nowrap; overflow: hidden; text-overflow:ellipsis;} /* 메인메뉴 2차 ul */
+#gnb li li {display:block;text-align:left;padding:5px;color:#} /* 메인메뉴 2차 li */
+#gnb li:hover ul {display:block;} /* 메인메뉴 2차 ul의 마우스 올렸을 때의 나타나는 상태 ~디스플레이만 빼고는 ~메인메뉴 2차 ul~에 가있어도 됨. */
+/* 메인메뉴 2차의 항목들 관련 */
+#gnb li li:hover {background:#F2F2F2;} /* 메인메뉴 2차 li ~항목~에 마우스 올렸을 때 배경색 */
+#gnb li li:hover a {color:#555555;} /* 메인메뉴 2차 메뉴에 마우스 올렸을 때 글자 색 */
+
+
+#widget {padding:2px 5px;background:#F9F9F9;}
+#siteNav {background-color:#C8CFD2;color:#777777;border-top:1px solid #E4EAEE;}
