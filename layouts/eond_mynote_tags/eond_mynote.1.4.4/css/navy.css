@@ -1,0 +1,16 @@
+/* 컨텐츠 테두리 */
+b.rtopC, b.rbottomC{display:block;clear:both;width:100%;}
+b.rtopC b, b.rbottomC b{display:block;height: 1px;
+    overflow: hidden; background: #34373E;}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtopC b.r4, b.rbottomC b.r4{display:block;margin: 0 1px;height: 2px}
+
+#main {background:#34373E;margin:0;padding:0px;float:left;width:100%;}
+#main p,span,div {color:#999;}
+
+html {height:100%;margin:0;padding:0;background:url("../images/bg/bg_wrap_navy.jpg");}
+#bg {position:absolute;right:0;bottom:30px;background:url(../images/bg/bg_wrap_navy.jpg) no-repeat right bottom fixed;width:250px;height:400px;}
+
+#wrap {height:100%;margin:0;padding:0 0 26px 0;background:url(../images/bg/bg_wrap_navy.jpg) no-repeat right bottom fixed;table-layout:fixed;}

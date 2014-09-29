@@ -1,0 +1,74 @@
+/*
+Gray
+제작일시 : 2013.02.19
+참조 : http://blog.techplusone.com/tutorial-design-a-clean-and-modern-calendar-widget-in-photoshop/
+*/
+html,div,ul,li,dd,dl,dt,h1,h2,h3,span,p,font,a,table,td,th,tbody,ol,h4 {
+font-family:malgungothic;
+}
+/* 전체 배경 */
+html, #bg, #wrap {background:#E6E6E6 url();}
+#wrap {padding:0 0 43px 0;}
+#colgroup {height:100%;}
+/* 레이아웃 테두리 */
+b.rtop b, b.rbottom b {display:none;}
+#colgroup,#widget,b.rtop b, b.rbottom b{background-color:#FFF;}
+#container {border:2px solid #E0E0E0;padding:0;}
+/* 프로필 */
+#profile,b.rtopB b, b.rbottomB b{background:#F2F2F2;}
+#profile img {border:0px solid #F2F2F2;}
+#profile p {color:#97979C;}
+/* 메뉴 */
+#gnb,b.rtopG b, b.rbottomG b{background:#FFF;}
+#gnb {border-top:1px solid #EDEDED;border-bottom:1px solid #EDEDED;height:15px;padding:15px;margin-top:15px;}
+b.rtopG b, b.rbottomG b {display:none;}
+#gnb a {font:10pt malgungothic;color:#6A6A6A;} /* 1차 메뉴 색상 */
+#gnb a:hover {color:#000;} /*1차 마우스 오버*/
+#gnb li {padding-right:15px;}
+#gnb li.on a {color:#000;} /*현재 접속한 메뉴 1차*/
+#gnb li.on li a {color:#DDD;}
+
+
+/* 메인메뉴 2차 관련 */
+#gnb li ul a {color:#333333;font:8pt malgungothic;}
+#gnb li.on ul a {color:#333333;font:8pt malgungothic;}
+#gnb li ul {position:absolute;left:-5px;display:none;background:#fefefe;border:1px solid #BBBBBB;z-index:100;margin:-1px;padding:0;width:90px;white-space: nowrap; overflow: hidden; text-overflow:ellipsis;font:8pt malgungothic;} /* 메인메뉴 2차 ul */
+#gnb li li {display:block;text-align:left;padding:5px;font:8pt malgungothic;} /* 메인메뉴 2차 li */
+#gnb li:hover ul {display:block;font:8pt malgungothic;} /* 메인메뉴 2차 ul의 마우스 올렸을 때의 나타나는 상태 ~디스플레이만 빼고는 ~메인메뉴 2차 ul~에 가있어도 됨. */
+/* 메인메뉴 2차의 항목들 관련 */
+#gnb li li:hover {background:#DFDFDF;font:8pt malgungothic;} /* 메인메뉴 2차 li ~항목~에 마우스 올렸을 때 배경색 */
+#gnb li li:hover a {color:#000;font:8pt malgungothic;} /* 메인메뉴 2차 메뉴에 마우스 올렸을 때 글자 색 */
+
+
+/* 사이트 네비게이션 */
+#siteNav {height:33px;background:#E0E0E0;border-top:1px solid #AAAAAB;color:#868686;}
+#siteNav ul {padding:0;margin:10px;}
+#siteNav li {display:inline;margin:10px;text-decoration:none;}
+
+#siteNav li a {font:8pt nanumgothic;text-decoration:none;color:#868686;}
+#siteNav li a:hover{color:#000000;text-decoration:underline;}
+
+#siteNav li.powered a {font:7pt verdana;}
+#siteNav div.copyright {color:#868686;}
+#siteNav div.copyright a {font:7pt verdana;color:#000000;}
+
+/*
+border:0px solid red;
+container : 사이드바 + 컨텐츠, 컨텐츠를 포함한 왼쪽 영역 전체를 담당함, 콜그룹을 감싼 형태.
+colgroup : 컨텐츠를 포함한 전체를 담당
+aside 오른쪽을 감쌈, widget을 감쌈
+
+sidebar 왼쪽 사이드 영역
+*/
+#container {border:0px solid red;padding-top:10px;}
+#colgroup {border:0px solid red;padding:10px;}
+#aside {border:0px solid #E0E0E0;padding:10px 0 0 15px;}
+#widget {border:0px solid red;padding:15px;}
+#sidebar {border:0px solid red;padding:5px;}
+
+#counter {border:0px solid red;}
+#snb {border:0px solid red;}
+#content {border:0px solid red;}
+#main {border:0px solid red;}
+
+#wdg_title,.wdg h3 {margin-top:10px;}

@@ -1,0 +1,11 @@
+.counter_widget {
+    color:#070907;
+    font-family:tahoma;
+    font-size:7pt;
+	text-align:center;
+}
+
+.counter_widget ul { margin:0; padding:0; list-style:none; }
+.counter_widget li {display:inline;padding:0;}
+li.today {background:url(ico_today.gif) no-repeat 0 4px;padding-left:34px;}
+li.total {background:url(ico_total.gif) no-repeat 0 3px;padding-left:49px;}

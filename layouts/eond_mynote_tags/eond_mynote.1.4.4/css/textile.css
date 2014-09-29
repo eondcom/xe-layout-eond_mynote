@@ -1,0 +1,30 @@
+/*
+컬러셋 이름 : textile
+제작일시 : 2013년 2월 20일
+디자인적 영감 : 프리미엄XE의 배경색상을 보고 천의 질감에서 영감을 얻음.
+*/
+/* 전체 배경 */
+html, #bg, #wrap {background:#000000 url('../images/textile/bg.png');}
+/* 프로필 */
+#profile,b.rtopB b, b.rbottomB b{background:url("../images/columnist/bg_profile.png");}
+/*사이트바 배경*/
+#siteNav {background:url("../images/textile/bg_sitebar.png");border:1px solid #263137;}
+
+/* 상단메뉴  */
+#gnb,b.rtopG b, b.rbottomG b{background:#E6E6E6;}
+#gnb {padding:6px 0;}
+#gnb a {font:8pt nanumgothic;color:#666666;} /* 1차 메뉴 색상 */
+#gnb a:hover {color:#0B1035;} /*1차 마우스 오버*/
+#gnb li.on a {color:#0B1035;} /*현재 접속한 메뉴 1차*/
+#gnb li.on li a {color:#666666;} /*현재 접속한 메뉴 1차의 2차 메뉴 */
+
+/* 레이아웃 컬러 F2F2F2 */
+#colgroup,#widget,b.rtop b, b.rbottom b{background-color:#F5F5F5;}
+
+/* 현재위치출력 */
+#location {background:transparent; border-bottom:1px dotted #DEDEDE;}
+
+/* 본문 사이드 구분바 */
+#sidebar {width:167px;border-right:1px solid #DDD;overflow:hidden;padding:0 5px;}
+#content {width:100%;padding:5px 10px;border-left:1px solid #FFFFFF;overflow:hidden;}
+

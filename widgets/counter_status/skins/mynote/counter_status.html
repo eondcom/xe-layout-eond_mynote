@@ -1,0 +1,18 @@
+<!--@if($colorset == "normal")-->
+    <!--%import("./default.css")-->
+<!--@end-->
+
+<div class="counter_widget">
+
+    <ul>
+      <!--@if($today_counter)-->
+      <li class="today"> {$today_counter->unique_visitor}</li>
+      <!--@end-->
+
+      <!--@if($total_counter)-->
+      <li class="total">{$total_counter->unique_visitor} </li>
+      <!--@end-->
+
+    </ul>
+
+</div>

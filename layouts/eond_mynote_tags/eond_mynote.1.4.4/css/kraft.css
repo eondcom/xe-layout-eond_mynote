@@ -1,0 +1,162 @@
+/*
+carton
+
+컬러셋 이름 : kraft
+제작일시 : 2013년 2월 20일
+디자인적 영감 :
+종이 재질 느낌의 컬러셋
+http://www.xpressengine.com/index.php?mid=download&category_srl=18322954&parent_srl=18322919&page=10&package_srl=18606308
+*/
+/* 전체 배경 */
+html, #bg, #wrap {background:#E4D5B6 url('../images/kraft/bg.jpg');}
+
+/* 레이아웃 컬러 F2F2F2 */
+#colgroup,#widget,b.rtop b, b.rbottom b{background:#E4D5B6 url('../images/kraft/bg_carton2.jpg');}
+
+/*사이트바 배경*/
+#siteNav {background:#F7F0E3;border:1px solid #958978;}
+
+/* 프로필 */
+#profile,b.rtopB b, b.rbottomB b{background:url('../images/kraft/bg_carton.jpg');}
+
+/* 상단메뉴  */
+#gnb,b.rtopG b, b.rbottomG b{background:url('../images/kraft/bg_carton.jpg');}
+
+/* 현재위치출력 */
+#location {background:transparent; border-bottom:1px dotted #C0BCB5;}
+
+
+#gnb a {font:8pt nanumgothic;color:#474849;} /* 1차 메뉴 색상 */
+#gnb a:hover {color:#ED4528;} /*1차 마우스 오버*/
+#gnb li.on a {color:#B94E34;} /*현재 접속한 메뉴 1차*/
+#gnb li.on li a {color:#474849;}
+
+
+/* 메인메뉴 2차 관련 */
+#gnb li ul a {color:#474849;}
+#gnb li.on ul a {color:#474849;}
+#gnb li ul {position:absolute;left:-5px;display:none;background:#F6F0E2;border:1px solid #BAB29D;z-index:100;margin:-1px;padding:0;width:90px;white-space: nowrap; overflow: hidden; text-overflow:ellipsis;filter:alpha(opacity=75); opacity:0.75; -moz-opacity:0.75;} /* 메인메뉴 2차 ul */
+#gnb li li {display:block;text-align:left;padding:5px;color:#} /* 메인메뉴 2차 li */
+#gnb li:hover ul {display:block;} /* 메인메뉴 2차 ul의 마우스 올렸을 때의 나타나는 상태 ~디스플레이만 빼고는 ~메인메뉴 2차 ul~에 가있어도 됨. */
+/* 메인메뉴 2차의 항목들 관련 */
+#gnb li li:hover {background:#F4EBDA;} /* 메인메뉴 2차 li ~항목~에 마우스 올렸을 때 배경색 */
+#gnb li li:hover a {color:#669900;} /* 메인메뉴 2차 메뉴에 마우스 올렸을 때 글자 색 */
+
+
+/* 컨텐츠 테두리 */
+b.rtopC, b.rbottomC{display:block;clear:both;width:100%;filter:alpha(opacity=75); opacity:0.75; -moz-opacity:0.75;}
+b.rtopC b, b.rbottomC b{display:block;height: 1px;
+    overflow: hidden; background: #F5F5F5;}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtopC b.r4, b.rbottomC b.r4{display:block;margin: 0 1px;height: 2px}
+
+#main {background:#F5F5F5;margin:0;padding:0px;float:left;width:100%;filter:alpha(opacity=75); opacity:0.75; -moz-opacity:0.75;}
+
+
+/* 본문 사이드 구분바 */
+#sidebar {width:167px;border-right:1px dotted #C0BCB5;overflow:hidden;padding:0 5px;}
+#content {width:100%;padding:5px 10px;border-left:1px dotted #F1EEE6;overflow:hidden;}
+
+/* 위젯 타이틀바 */
+#sidebar .widgetA .title {border-bottom:1px dashed #AAAAAA;}
+
+.widget_title,.wdg h3 {
+	border-top:1px dotted #9C8E7C;border-left:1px dotted #9C8E7C; border-right:1px dotted #9C8E7C; border-bottom:1px dotted #9C8E7C;
+	height:13px;font:bold 10px tahoma;color:#CC6F34;display:block;text-align:center;margin:0px auto 5px;background:#F3E9D8;
+	text-transform: uppercase}
+
+/* 검색 */
+#isSearch {margin:5px 0;padding:0;}
+#isSearch .inputText {width:100px;_width:97px; height:14px; margin:0;padding:0 3px; border:1px solid #EDEBEC; background-color:#F4F0E9; color:#474849; font-family:dotum, "돋움"; font-size:11px;vertical-align:middle;float:left;}
+#isSearch .submit {vertical-align:middle;margin:0;padding:0;float:right;}
+
+/* 로그인 영역 */
+#snb #logged #login_header {
+float: left;
+width: 100%;
+border:0;
+padding-bottom: 2px;
+margin-bottom: 2px;
+}
+#snb #logged #logged_menu {
+clear: both;
+width:100%;
+border: 1px dotted #9C8E7C;
+background-color: #F3E9D8;
+font: 11px dotum;
+color: #767676;
+padding: 5px 5px 0 5px;
+letter-spacing: 0px;
+margin: 3px 0 3px 0;
+padding: 3px 0 0px 5px;
+overflow: hidden;
+}
+#snb #logged #logged_menu .menu_separator {color:#4E4E4E;}
+#snb #logged #music {display:none;}
+#snb #logged #logout .bgp {
+background-position: -60px -43px;
+width: 55px;
+height: 16px;
+}
+#snb #logged #info .bgp {
+background-position: -149px -48px;
+width: 54px;
+height: 10px;
+margin: 1px 3px 0 0;
+}
+
+#snb #login_eond_mynote #id .bgp {
+float: left;
+background-position: 0 -30px;
+width: 12px;
+height: 10px;
+margin-left: 40px;
+margin-top: 3px;
+margin-right: 2px;
+}
+#snb #login_eond_mynote #pw .bgp {
+float: left;
+background-position: -12px -30px;
+width: 52px;
+height: 10px;
+margin-top: 3px;
+margin-right: 2px;
+}
+#snb #login_eond_mynote #btn_join .bgp {
+background-position: 0px -13px;
+width: 57px;
+height: 16px;
+display: inline-block;
+}
+#snb #login_eond_mynote #btn_forgotpw .bgp {
+float: left;
+width: 98px;
+height: 13px;
+background-position: -111px -30px;
+margin-top:-1px;
+}
+
+#snb #login_eond_mynote .separator {
+float: left;
+height: 7px;
+border-right: 1px solid #006B8F;
+margin: 2px 0px 2px 0px;
+overflow: hidden;
+}
+
+#snb  #login_eond_mynote #btn_login {
+width: 57px;
+height: 16px;
+border-top:1px solid #AAAAAA;
+border-left:1px solid #AAAAAA;
+border-right:1px solid #AAAAAA;
+border-bottom:1px solid #AAAAAA;
+color:#555555;
+font:italic 10px TAHOMA;
+background:#F3E9D8;
+}
+
+#snb #login_eond_mynote #form_field input {width:85px;height:17px;background-color:#F4F0E9;border:0px;border-right:1px solid
+#D2C3B0;border-bottom:1px solid #D2C3B0;font:10px tahoma;color:#474849;margin: 0 0 2px 0 ;padding:0px;padding-left:3px;padding-top:1px;ime-mode:inactive}
